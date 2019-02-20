@@ -7,9 +7,9 @@ export const addTodo = (text) => ({
     completed: false,
     id: nextTodoId++,
     text: text
-});
+})
 
 export const toggleTodo = (id) => ({
     type: TOGGLE_TODO,
     id: id
-});
+})

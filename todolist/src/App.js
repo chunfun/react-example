@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import AddTodo from "./todos/containers/AddTodo";
+import React, { Component } from 'react'
+import AddTodo from "./todos/containers/AddTodo"
+import VisibleTodoList from "./todos/containers/VisibleTodoList"
+
 import './App.css';
 
 class TodoApp extends Component {
@@ -10,6 +12,7 @@ class TodoApp extends Component {
           <h1>TODO</h1>
         }
         <AddTodo />
+        <VisibleTodoList />
       </div>
     );
   }

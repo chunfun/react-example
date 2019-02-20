@@ -5,8 +5,9 @@ import './index.css';
 import TodoApp from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
+import todosReducer from "./todos/reducers/todosReducer";
 
-let store = createStore(function(){})
+let store = createStore(todosReducer)
 
 ReactDOM.render(
     <Provider store={store}>

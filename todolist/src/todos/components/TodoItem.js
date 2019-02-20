@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const TodoItem = (onClick, completed, text) => (
+const TodoItem = ({onClick, completed, text}) => (
     <li 
         onClick={onClick}
         style={
