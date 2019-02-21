@@ -1,0 +1,30 @@
+input{
+    width: 340px;
+    height: 40px;
+    border-radius:6px;
+    font-size:17px;
+    color:black;
+    font-family: '微软雅黑';
+    cursor: pointer;
+    outline: none;
+    border: 1px solid 	#D8D8D8;
+    text-indent: 10px;
+}
+        
+button {
+    height: 42px;
+    border-radius:6px;
+    font-size:17px;
+    color: #fff;
+    font-family: '微软雅黑';
+    border: 1px solid 	#D8D8D8;
+    outline: none;
+    background: #3c9;
+    cursor: pointer;
+    margin-left: 9px;
+}
+
+button:hover {
+    color: #fff;
+    background: rgba(#3c9, 0.7);
+}

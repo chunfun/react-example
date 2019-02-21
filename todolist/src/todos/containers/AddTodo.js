@@ -1,10 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions/actions'
+import './AddTodo.css'
 
 let AddTodo = ({ dispatch }) => {
   let input
-
+  
   return (
     <div>
       <form

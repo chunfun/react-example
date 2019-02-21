@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
-import './index.css';
-import TodoApp from './App';
-import * as serviceWorker from './serviceWorker';
-import { createStore } from 'redux';
-import todosReducer from "./todos/reducers/todosReducer";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {Provider} from 'react-redux'
+import './index.css'
+import TodoApp from './App'
+import * as serviceWorker from './serviceWorker'
+import { createStore } from 'redux'
+import todos from "./todos/reducers/todos"
 
-let store = createStore(todosReducer)
+let store = createStore(todos)
 
 ReactDOM.render(
     <Provider store={store}>

@@ -1,6 +1,6 @@
 import {ADD_TODO, TOGGLE_TODO} from '../actions/actionTypes'
 
-const todosReducer = (state=[], action) => {
+const todos = (state=[], action) => {
     switch(action.type) {
         case ADD_TODO:
             console.log("ADD_TODO")
@@ -13,11 +13,13 @@ const todosReducer = (state=[], action) => {
                 }
             ]
         case TOGGLE_TODO:
-            
-            break;    
+            console.log("TOGGLE_TODO")
+            return state.map(todo => 
+                (todo.id === action.id) ? {...todo, completed : !todo.completed} : todo
+            )
         default:
-            return state;    
+            return state   
     }
 }
 
-export default todosReducer
+export default todos

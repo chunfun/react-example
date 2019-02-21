@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import AddTodo from "./todos/containers/AddTodo"
 import VisibleTodoList from "./todos/containers/VisibleTodoList"
 
-import './App.css';
+import './App.css'
 
 class TodoApp extends Component {
   render() {
